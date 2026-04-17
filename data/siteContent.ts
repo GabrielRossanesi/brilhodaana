@@ -12,7 +12,7 @@ export const brand = {
 
 export const links = {
   whatsapp:
-    "https://wa.me/5500000000000?text=Ol%C3%A1,%20quero%20conhecer%20as%20pe%C3%A7as%20da%20Brilho%20da%20Ana",
+    "https://wa.me/5519982628023?text=Ol%C3%A1,%20quero%20conhecer%20as%20pe%C3%A7as%20da%20Brilho%20da%20Ana",
   catalog: "#pecas",
   about: "#marca",
   instagram: "https://instagram.com/brilhodaana",
