@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: "/brilhodaana",
-  assetPrefix: "/brilhodaana/",
+  assetPrefix: "/brilhodaana",
   images: {
     unoptimized: true,
     remotePatterns: [

@@ -128,40 +128,20 @@ img {
 
 .logo-mark {
   display: inline-flex;
-  align-items: flex-start;
-  gap: 10px;
-  color: var(--ink);
+  align-items: center;
+  width: clamp(84px, 9vw, 116px);
 }
 
 .logo-mark--muted {
-  color: rgba(255, 255, 255, 0.9);
+  width: 112px;
+  filter: invert(1) brightness(1.8);
+  opacity: 0.86;
 }
 
-.logo-mark__sparkle {
-  padding-top: 4px;
-  font-size: 0.95rem;
-  opacity: 0.78;
-}
-
-.logo-mark__text {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.9;
-}
-
-.logo-mark__brand {
-  font-family: "Cormorant Garamond", "Times New Roman", serif;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: 600;
-  letter-spacing: 0.18em;
-}
-
-.logo-mark__signature {
-  margin-top: -3px;
-  margin-left: 28px;
-  font-family: "Parisienne", cursive;
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
-  letter-spacing: 0.02em;
+.logo-mark__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .eyebrow,
