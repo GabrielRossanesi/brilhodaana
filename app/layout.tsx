@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Brilho da Ana | Biquínis com curadoria e estilo",
+  title: "Brilho da Ana | Biquínis com seleção e estilo",
   description:
-    "Curadoria feminina de biquínis e achados de praia com estilo, preço leve e atendimento próximo.",
+    "Seleção feminina de biquínis e achados de praia com estilo, preço leve e atendimento próximo.",
 };
 
 export default function RootLayout({

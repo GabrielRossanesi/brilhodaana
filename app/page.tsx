@@ -90,7 +90,7 @@ export default function Home() {
         <div className="section__inner">
           <Reveal>
             <SectionHeading
-              eyebrow="Curadoria de moda praia"
+              eyebrow="Seleção de moda praia"
               title="Biquínis com olhar de boutique, avaliados peça por peça."
               description="A seleção prioriza caimento, estado de conservação, acabamento e combinações que deixam a compra mais simples."
             />
@@ -115,7 +115,7 @@ export default function Home() {
           <Reveal className="story-grid__intro">
             <SectionHeading
               eyebrow="Sobre a marca"
-              title="Uma curadoria feminina para renovar o verão com beleza, cuidado e acesso."
+              title="Uma seleção feminina para renovar o verão com beleza, cuidado e acesso."
               description={`${brand.statement} ${brand.mission}`}
             />
           </Reveal>
@@ -228,7 +228,7 @@ export default function Home() {
             <span className="eyebrow">Chamada final</span>
             <h2>Veja os biquínis disponíveis antes da próxima viagem.</h2>
             <p>
-              Uma curadoria de moda praia com estilo, atendimento direto e preço
+              Uma seleção de moda praia com estilo, atendimento direto e preço
               mais leve para escolher bem.
             </p>
             <div className="hero__actions">
@@ -251,7 +251,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="site-footer__inner">
           <LogoMark muted />
-          <p>Curadoria feminina de biquínis, achados de praia e boas escolhas.</p>
+          <p>Seleção feminina de biquínis, achados de praia e boas escolhas.</p>
           <div className="site-footer__links">
             <a href={links.instagram} target="_blank" rel="noreferrer">
               Instagram

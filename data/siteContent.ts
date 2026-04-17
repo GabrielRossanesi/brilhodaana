@@ -1,11 +1,11 @@
 export const brand = {
   name: "Brilho da Ana",
   eyebrow: "Beachwear feminino selecionado",
-  headline: "Biquínis com curadoria e preço leve.",
+  headline: "Biquínis com seleção e preço leve.",
   subheadline:
     "Modelos escolhidos com olhar de boutique para valorizar o corpo, acompanhar o verão e facilitar escolhas bonitas.",
   statement:
-    "A Brilho da Ana nasce para revelar peças de moda praia bonitas, atuais e bem cuidadas. Uma curadoria feminina que combina frescor, autenticidade e consumo inteligente sem abrir mão do acesso.",
+    "A Brilho da Ana nasce para revelar peças de moda praia bonitas, atuais e bem cuidadas. Uma seleção feminina que combina frescor, autenticidade e consumo inteligente sem abrir mão do acesso.",
   mission:
     "Cada escolha passa por olhar atento ao caimento, estado da peça, acabamento e potencial de compor uma mala de verão com personalidade.",
 };
@@ -20,14 +20,14 @@ export const links = {
 
 export const heroStats = [
   { value: "Biquínis", label: "Moda praia como carro-chefe da seleção." },
-  { value: "Curadoria", label: "Modelos escolhidos por caimento e estilo." },
+  { value: "Seleção", label: "Modelos escolhidos por caimento e estilo." },
   { value: "Atendimento", label: "Compra simples com apoio no WhatsApp." },
 ];
 
 export const differentials = [
   {
     icon: "sparkle",
-    title: "Curadoria de verão",
+    title: "Seleção de verão",
     description:
       "Biquínis, saídas e achadinhos de praia escolhidos para montar produções leves, femininas e atuais.",
   },
@@ -55,7 +55,7 @@ export const processSteps = [
   {
     title: "Seleção dos biquínis",
     description:
-      "Entram na curadoria modelos com bom caimento, cores desejáveis e potencial real de uso.",
+      "Entram na seleção modelos com bom caimento, cores desejáveis e potencial real de uso.",
   },
   {
     title: "Avaliação peça a peça",
@@ -77,7 +77,7 @@ export const processSteps = [
 export const featuredPieces = [
   {
     name: "Biquínis selecionados",
-    subtitle: "Curadoria principal",
+    subtitle: "Seleção principal",
     description:
       "Modelos pouco usados, bem cuidados e escolhidos para valorizar o corpo com naturalidade.",
     image:
@@ -117,7 +117,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Gostei da curadoria porque tinha modelos diferentes e preço justo.",
+      "Gostei da seleção porque tinha modelos diferentes e preço justo.",
     author: "Carolina, cliente",
   },
   {
