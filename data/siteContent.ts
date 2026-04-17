@@ -1,128 +1,128 @@
 export const brand = {
   name: "Brilho da Ana",
-  eyebrow: "Boutique feminina selecionada",
-  headline: "Seu estilo, com economia e autenticidade.",
+  eyebrow: "Beachwear feminino selecionado",
+  headline: "Biquínis com curadoria e preço leve.",
   subheadline:
-    "Peças selecionadas, pouco usadas e cheias de estilo para mulheres que valorizam beleza, qualidade e boas escolhas.",
+    "Modelos escolhidos com olhar de boutique para valorizar o corpo, acompanhar o verão e facilitar escolhas bonitas.",
   statement:
-    "A Brilho da Ana nasce para revelar o valor de peças bonitas, atuais e bem cuidadas. Uma curadoria feminina que combina elegância, autenticidade e consumo inteligente sem abrir mão do acesso.",
+    "A Brilho da Ana nasce para revelar peças de moda praia bonitas, atuais e bem cuidadas. Uma curadoria feminina que combina frescor, autenticidade e consumo inteligente sem abrir mão do acesso.",
   mission:
-    "Cada escolha passa por olhar atento, acabamento impecável e uma sensação de boutique próxima, acolhedora e confiável.",
+    "Cada escolha passa por olhar atento ao caimento, estado da peça, acabamento e potencial de compor uma mala de verão com personalidade.",
 };
 
 export const links = {
   whatsapp:
-    "https://wa.me/5519982628023?text=Ol%C3%A1,%20quero%20conhecer%20as%20pe%C3%A7as%20da%20Brilho%20da%20Ana",
+    "https://wa.me/5519982628023?text=Ol%C3%A1,%20quero%20conhecer%20os%20biqu%C3%ADnis%20da%20Brilho%20da%20Ana",
   catalog: "#pecas",
   about: "#marca",
   instagram: "https://instagram.com/brilhodaana",
 };
 
 export const heroStats = [
-  { value: "Curadoria", label: "Seleção com olhar boutique e feminino." },
-  { value: "Pouco uso", label: "Qualidade avaliada peça por peça." },
+  { value: "Biquínis", label: "Moda praia como carro-chefe da seleção." },
+  { value: "Curadoria", label: "Modelos escolhidos por caimento e estilo." },
   { value: "Atendimento", label: "Compra simples com apoio no WhatsApp." },
 ];
 
 export const differentials = [
   {
     icon: "sparkle",
-    title: "Curadoria de peças",
+    title: "Curadoria de verão",
     description:
-      "Modelagens, tecidos e acabamentos escolhidos com o cuidado de quem monta um closet com identidade.",
+      "Biquínis, saídas e achadinhos de praia escolhidos para montar produções leves, femininas e atuais.",
   },
   {
     icon: "shield",
-    title: "Qualidade garantida",
+    title: "Qualidade avaliada",
     description:
-      "As peças passam por avaliação para manter a experiência bonita, confiável e coerente com a proposta da marca.",
+      "Cada peça passa por uma checagem de estado, elástico, forro, acabamento e apresentação.",
   },
   {
     icon: "tag",
-    title: "Estilo acessível",
+    title: "Preço acessível",
     description:
-      "Uma seleção elegante e atual para quem quer se vestir bem sem pagar a mais por isso.",
+      "Moda praia com presença de boutique e valores mais leves para renovar o verão com inteligência.",
   },
   {
     icon: "heart",
     title: "Atendimento próximo",
     description:
-      "Contato direto, atencioso e humano para tirar dúvidas, indicar combinações e facilitar a escolha.",
+      "Contato direto para tirar dúvidas sobre tamanho, caimento, combinações e disponibilidade.",
   },
 ];
 
 export const processSteps = [
   {
-    title: "Seleção das peças",
+    title: "Seleção dos biquínis",
     description:
-      "Buscamos itens femininos com bom caimento, estilo atual e potencial real de desejo.",
+      "Entram na curadoria modelos com bom caimento, cores desejáveis e potencial real de uso.",
   },
   {
-    title: "Curadoria e avaliação",
+    title: "Avaliação peça a peça",
     description:
-      "Cada detalhe é conferido para garantir apresentação impecável e compra com segurança.",
+      "Forro, elástico, tecido e acabamento são conferidos para garantir uma compra tranquila.",
   },
   {
-    title: "Disponibilização online",
+    title: "Vitrine com desejo",
     description:
-      "As peças ganham produção visual refinada e descrição objetiva para facilitar a escolha.",
+      "As peças são apresentadas com foco em estilo, composição de verão e informação objetiva.",
   },
   {
-    title: "Compra prática no WhatsApp",
+    title: "Compra pelo WhatsApp",
     description:
-      "A cliente demonstra interesse, recebe atendimento rápido e finaliza tudo de forma simples.",
+      "A cliente escolhe, conversa, confirma disponibilidade e finaliza de forma simples.",
   },
 ];
 
 export const featuredPieces = [
   {
-    name: "Vestido midi plissado",
-    subtitle: "Elegância leve para compromissos que pedem presença.",
+    name: "Biquínis selecionados",
+    subtitle: "Curadoria principal",
     description:
-      "Tecido fluido, cintura marcada e acabamento delicado para looks femininos com naturalidade.",
+      "Modelos pouco usados, bem cuidados e escolhidos para valorizar o corpo com naturalidade.",
     image:
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605749429052-4eb49f89eddc?auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Blazer cinza claro",
-    subtitle: "Alfaiataria suave para elevar o básico.",
+    name: "Tops e partes de baixo",
+    subtitle: "Combinações possíveis",
     description:
-      "Estrutura elegante, toque macio e versatilidade para acompanhar do casual ao chic.",
+      "Opções para montar conjuntos, misturar cores e encontrar a proporção que combina com você.",
     image:
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1642071811908-48197d4bf711?auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Conjunto monocromático",
-    subtitle: "Visual alinhado com sofisticação descomplicada.",
+    name: "Achados de praia",
+    subtitle: "Verão completo",
     description:
-      "Peças coordenadas para compor uma imagem atual, feminina e naturalmente refinada.",
+      "Peças para compor mala, piscina e fim de semana com um visual leve e bem escolhido.",
     image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1770657249870-626b05295f9c?auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Camisa acetinada",
-    subtitle: "Brilho sutil e caimento elegante para várias ocasiões.",
+    name: "Modelagens especiais",
+    subtitle: "Caimento em primeiro lugar",
     description:
-      "Um essencial com acabamento delicado para combinar autenticidade, conforto e estilo.",
+      "Seleção pensada para diferentes estilos, com atenção ao conforto e à segurança no uso.",
     image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1621403334718-a8393252a80f?auto=format&fit=crop&w=1000&q=80",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "As peças são lindas e muito bem cuidadas. Dá para sentir o carinho na escolha.",
+      "Comprei biquínis lindos e muito bem cuidados. Parecia compra de boutique.",
     author: "Marina, cliente",
   },
   {
     quote:
-      "Encontrei roupas com estilo e preço justo, sem perder a sensação de boutique.",
+      "Gostei da curadoria porque tinha modelos diferentes e preço justo.",
     author: "Carolina, cliente",
   },
   {
     quote:
-      "O atendimento foi atencioso do início ao fim e me ajudou a escolher com segurança.",
+      "O atendimento me ajudou a entender caimento e escolher com segurança.",
     author: "Renata, cliente",
   },
 ];

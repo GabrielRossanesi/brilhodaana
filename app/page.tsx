@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { IconBadge } from "@/components/IconBadge";
 import { LogoMark } from "@/components/LogoMark";
+import { MobileMenu } from "@/components/MobileMenu";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
@@ -25,17 +26,18 @@ export default function Home() {
           <nav className="site-nav" aria-label="Navegação principal">
             <a href="#diferenciais">Diferenciais</a>
             <a href="#marca">A marca</a>
-            <a href="#pecas">Peças</a>
+            <a href="#pecas">Biquínis</a>
             <a href="#contato">Contato</a>
           </nav>
           <a
-            className="button button--ghost"
+            className="button button--ghost site-header__cta"
             href={links.whatsapp}
             target="_blank"
             rel="noreferrer"
           >
             WhatsApp
           </a>
+          <MobileMenu />
         </header>
 
         <div className="hero__content">
@@ -46,7 +48,7 @@ export default function Home() {
 
             <div className="hero__actions">
               <a className="button" href={links.catalog}>
-                Ver peças
+                Ver biquínis
               </a>
               <a className="button button--ghost button--light" href={links.about}>
                 Conhecer a marca
@@ -66,18 +68,18 @@ export default function Home() {
           <Reveal className="hero__visual" delay={140}>
             <div className="hero__image-frame">
               <Image
-                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80"
-                alt="Moda feminina em proposta editorial e sofisticada"
+                src="https://images.unsplash.com/photo-1770657249870-626b05295f9c?auto=format&fit=crop&w=1200&q=80"
+                alt="Biquíni selecionado em composição de moda praia"
                 width={860}
                 height={1100}
                 priority
               />
             </div>
             <div className="hero__note">
-              <span>Seleção com olhar refinado</span>
+              <span>Carro-chefe da marca</span>
               <p>
-                Peças com presença, caimento bonito e uma curadoria que valoriza
-                estilo real.
+                Biquínis pouco usados, bem cuidados e escolhidos por caimento,
+                estilo e presença de verão.
               </p>
             </div>
           </Reveal>
@@ -88,9 +90,9 @@ export default function Home() {
         <div className="section__inner">
           <Reveal>
             <SectionHeading
-              eyebrow="Mais do que seminovo"
-              title="Uma seleção pensada para vestir bem, durar e representar você."
-              description="A proposta da marca vai além da roupa usada: aqui, cada peça entra por afinidade estética, qualidade real e potencial de compor um closet com personalidade."
+              eyebrow="Curadoria de moda praia"
+              title="Biquínis com olhar de boutique, avaliados peça por peça."
+              description="A seleção prioriza caimento, estado de conservação, acabamento e combinações que deixam a compra mais simples."
             />
           </Reveal>
 
@@ -113,7 +115,7 @@ export default function Home() {
           <Reveal className="story-grid__intro">
             <SectionHeading
               eyebrow="Sobre a marca"
-              title="Nova vida para peças bonitas, com curadoria, delicadeza e consumo inteligente."
+              title="Uma curadoria feminina para renovar o verão com beleza, cuidado e acesso."
               description={`${brand.statement} ${brand.mission}`}
             />
           </Reveal>
@@ -122,11 +124,11 @@ export default function Home() {
             <div className="story-panel">
               <span className="story-panel__label">Essência da Brilho da Ana</span>
               <p>
-                Feminilidade sem excesso, elegância sem rigidez e acesso sem
-                perder o encanto.
+                Moda praia com leveza, garimpo inteligente e atendimento próximo
+                para escolher sem pressa.
               </p>
               <a href={links.whatsapp} target="_blank" rel="noreferrer">
-                Conversar sobre uma peça
+                Conversar sobre biquínis
               </a>
             </div>
           </Reveal>
@@ -138,8 +140,8 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Como funciona"
-              title="Uma jornada simples, refinada e pensada para deixar a compra leve."
-              description="Do olhar curatorial ao atendimento final, cada etapa ajuda a traduzir confiança e praticidade em uma experiência boutique."
+              title="Da seleção ao WhatsApp, uma compra leve e direta."
+              description="A jornada foi pensada para mostrar os biquínis com clareza e facilitar o atendimento individual."
             />
           </Reveal>
 
@@ -157,13 +159,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="pecas">
+      <section className="section section--pieces" id="pecas">
         <div className="section__inner pieces-layout">
           <Reveal className="pieces-layout__intro">
             <SectionHeading
-              eyebrow="Destaques"
-              title="Uma vitrine com atmosfera de boutique, pronta para evoluir para um catálogo vivo."
-              description="Os exemplos abaixo mostram como a marca pode apresentar as peças com desejo, clareza e atendimento orientado para conversão."
+              eyebrow="Vitrine"
+              title="Biquínis e achados de praia para escolher pelo WhatsApp."
+              description="A área de destaques agora apresenta categorias de moda praia, sem nomes soltos de roupas que não representam o carro-chefe da cliente."
             />
             <a
               className="button"
@@ -200,8 +202,8 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Confiança"
-              title="Depoimentos que reforçam o cuidado por trás de cada escolha."
-              description="Textos curtos, naturais e femininos ajudam a sustentar a percepção de capricho, proximidade e credibilidade."
+              title="Compra de moda praia também precisa de cuidado e orientação."
+              description="Depoimentos curtos reforçam conservação, caimento, atendimento e a sensação de comprar com segurança."
             />
           </Reveal>
 
@@ -224,10 +226,10 @@ export default function Home() {
         <div className="section__inner">
           <Reveal className="cta-panel">
             <span className="eyebrow">Chamada final</span>
-            <h2>Descubra peças que combinam com você.</h2>
+            <h2>Veja os biquínis disponíveis antes da próxima viagem.</h2>
             <p>
-              Uma curadoria com estilo, autenticidade e preço acessível para
-              mulheres que gostam de escolher bem.
+              Uma curadoria de moda praia com estilo, atendimento direto e preço
+              mais leve para escolher bem.
             </p>
             <div className="hero__actions">
               <a
@@ -249,7 +251,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="site-footer__inner">
           <LogoMark muted />
-          <p>Curadoria feminina com beleza real, autenticidade e boas escolhas.</p>
+          <p>Curadoria feminina de biquínis, achados de praia e boas escolhas.</p>
           <div className="site-footer__links">
             <a href={links.instagram} target="_blank" rel="noreferrer">
               Instagram

@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Brilho da Ana | Curadoria feminina com estilo e autenticidade",
+  title: "Brilho da Ana | Biquínis com curadoria e estilo",
   description:
-    "Landing page institucional da Brilho da Ana, boutique feminina com curadoria elegante, acessibilidade e atendimento próximo.",
+    "Curadoria feminina de biquínis e achados de praia com estilo, preço leve e atendimento próximo.",
 };
 
 export default function RootLayout({
