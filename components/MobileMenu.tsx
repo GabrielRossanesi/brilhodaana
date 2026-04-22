@@ -6,7 +6,7 @@ import { links } from "@/data/siteContent";
 const navItems = [
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#marca", label: "A marca" },
-  { href: "#pecas", label: "Biquínis" },
+  { href: "#pecas", label: "Peças" },
   { href: "#contato", label: "Contato" },
 ];
 

@@ -26,7 +26,7 @@ export default function Home() {
           <nav className="site-nav" aria-label="Navegação principal">
             <a href="#diferenciais">Diferenciais</a>
             <a href="#marca">A marca</a>
-            <a href="#pecas">Biquínis</a>
+            <a href="#pecas">Peças</a>
             <a href="#contato">Contato</a>
           </nav>
           <a
@@ -48,7 +48,7 @@ export default function Home() {
 
             <div className="hero__actions">
               <a className="button" href={links.catalog}>
-                Ver biquínis
+                Ver novidades
               </a>
               <a className="button button--ghost button--light" href={links.about}>
                 Conhecer a marca
@@ -69,17 +69,17 @@ export default function Home() {
             <div className="hero__image-frame">
               <Image
                 src="https://images.unsplash.com/photo-1770657249870-626b05295f9c?auto=format&fit=crop&w=1200&q=80"
-                alt="Biquíni selecionado em composição de moda praia"
+                alt="Look feminino leve em composição de verão"
                 width={860}
                 height={1100}
                 priority
               />
             </div>
             <div className="hero__note">
-              <span>Carro-chefe da marca</span>
+              <span>Estilo para a rotina</span>
               <p>
-                Biquínis pouco usados, bem cuidados e escolhidos por caimento,
-                estilo e presença de verão.
+                Peças versáteis para montar looks leves, bonitos e prontos para
+                acompanhar seus planos.
               </p>
             </div>
           </Reveal>
@@ -90,9 +90,9 @@ export default function Home() {
         <div className="section__inner">
           <Reveal>
             <SectionHeading
-              eyebrow="Seleção de moda praia"
-              title="Biquínis com olhar de boutique, avaliados peça por peça."
-              description="A seleção prioriza caimento, estado de conservação, acabamento e combinações que deixam a compra mais simples."
+              eyebrow="Moda feminina"
+              title="Looks versáteis para facilitar o seu dia a dia."
+              description="Combine peças leves, bonitas e fáceis de usar sem complicar a rotina."
             />
           </Reveal>
 
@@ -115,7 +115,7 @@ export default function Home() {
           <Reveal className="story-grid__intro">
             <SectionHeading
               eyebrow="Sobre a marca"
-              title="Uma seleção feminina para renovar o verão com beleza, cuidado e acesso."
+              title="Uma loja feminina para vestir sua rotina com leveza e personalidade."
               description={`${brand.statement} ${brand.mission}`}
             />
           </Reveal>
@@ -124,11 +124,11 @@ export default function Home() {
             <div className="story-panel">
               <span className="story-panel__label">Essência da Brilho da Ana</span>
               <p>
-                Moda praia com leveza, garimpo inteligente e atendimento próximo
-                para escolher sem pressa.
+                Moda feminina leve, prática e cheia de personalidade para
+                escolher sem pressa.
               </p>
               <a href={links.whatsapp} target="_blank" rel="noreferrer">
-                Conversar sobre biquínis
+                Conversar sobre peças
               </a>
             </div>
           </Reveal>
@@ -139,9 +139,9 @@ export default function Home() {
         <div className="section__inner process-grid">
           <Reveal>
             <SectionHeading
-              eyebrow="Como funciona"
-              title="Da seleção ao WhatsApp, uma compra leve e direta."
-              description="A jornada foi pensada para mostrar os biquínis com clareza e facilitar o atendimento individual."
+              eyebrow="Como comprar"
+              title="Escolha seu look e fale com a gente pelo WhatsApp."
+              description="A experiência é direta para você ver as novidades, tirar dúvidas e finalizar com tranquilidade."
             />
           </Reveal>
 
@@ -164,8 +164,8 @@ export default function Home() {
           <Reveal className="pieces-layout__intro">
             <SectionHeading
               eyebrow="Vitrine"
-              title="Biquínis e achados de praia para escolher pelo WhatsApp."
-              description="A área de destaques agora apresenta categorias de moda praia, sem nomes soltos de roupas que não representam o carro-chefe da cliente."
+              title="Peças versáteis para montar looks sem esforço."
+              description="Destaques para o dia a dia, lazer e momentos de verão, com estilo leve e fácil de combinar."
             />
             <a
               className="button"
@@ -173,7 +173,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Pedir seleção no WhatsApp
+              Ver novidades no WhatsApp
             </a>
           </Reveal>
 
@@ -202,8 +202,8 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Confiança"
-              title="Compra de moda praia também precisa de cuidado e orientação."
-              description="Depoimentos curtos reforçam conservação, caimento, atendimento e a sensação de comprar com segurança."
+              title="Comprar moda feminina pode ser simples, leve e seguro."
+              description="Atendimento próximo para orientar tamanho, caimento, combinações e disponibilidade."
             />
           </Reveal>
 
@@ -226,10 +226,10 @@ export default function Home() {
         <div className="section__inner">
           <Reveal className="cta-panel">
             <span className="eyebrow">Chamada final</span>
-            <h2>Veja os biquínis disponíveis antes da próxima viagem.</h2>
+            <h2>Pronta para deixar seus looks mais fáceis?</h2>
             <p>
-              Uma seleção de moda praia com estilo, atendimento direto e preço
-              mais leve para escolher bem.
+              Conheça as novidades da Brilho da Ana e escolha peças que combinam
+              com sua rotina.
             </p>
             <div className="hero__actions">
               <a
@@ -241,7 +241,7 @@ export default function Home() {
                 Falar no WhatsApp
               </a>
               <a className="button button--ghost" href={links.catalog}>
-                Ver vitrine
+                Ver novidades
               </a>
             </div>
           </Reveal>
@@ -251,7 +251,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="site-footer__inner">
           <LogoMark muted />
-          <p>Seleção feminina de biquínis, achados de praia e boas escolhas.</p>
+          <p>Moda feminina leve, prática e cheia de personalidade.</p>
           <div className="site-footer__links">
             <a href={links.instagram} target="_blank" rel="noreferrer">
               Instagram

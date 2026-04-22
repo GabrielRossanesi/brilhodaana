@@ -1,47 +1,47 @@
 export const brand = {
   name: "Brilho da Ana",
-  eyebrow: "Beachwear feminino selecionado",
-  headline: "Biquínis com seleção e preço leve.",
+  eyebrow: "Moda feminina para todos os dias",
+  headline: "Se vestir bem nunca foi tão simples.",
   subheadline:
-    "Modelos escolhidos com olhar de boutique para valorizar o corpo, acompanhar o verão e facilitar escolhas bonitas.",
+    "Peças versáteis, bonitas e fáceis de combinar para acompanhar sua rotina com leveza.",
   statement:
-    "A Brilho da Ana nasce para revelar peças de moda praia bonitas, atuais e bem cuidadas. Uma seleção feminina que combina frescor, autenticidade e consumo inteligente sem abrir mão do acesso.",
+    "A Brilho da Ana é uma loja de moda feminina feita para quem quer praticidade sem abrir mão de estilo. Aqui, cada look nasce para facilitar o dia a dia e valorizar a sua personalidade.",
   mission:
-    "Cada escolha passa por olhar atento ao caimento, estado da peça, acabamento e potencial de compor uma mala de verão com personalidade.",
+    "Do básico bem resolvido ao visual de fim de semana, a marca reúne opções leves, atuais e confortáveis para você escolher com confiança.",
 };
 
 export const links = {
   whatsapp:
-    "https://wa.me/5519982628023?text=Ol%C3%A1,%20quero%20conhecer%20os%20biqu%C3%ADnis%20da%20Brilho%20da%20Ana",
+    "https://wa.me/5519982628023?text=Ol%C3%A1,%20quero%20conhecer%20as%20pe%C3%A7as%20da%20Brilho%20da%20Ana",
   catalog: "#pecas",
   about: "#marca",
   instagram: "https://instagram.com/brilhodaana",
 };
 
 export const heroStats = [
-  { value: "Biquínis", label: "Moda praia como carro-chefe da seleção." },
-  { value: "Seleção", label: "Modelos escolhidos por caimento e estilo." },
+  { value: "Looks", label: "Combinações fáceis para resolver a produção." },
+  { value: "Versatilidade", label: "Peças que transitam do dia a dia ao lazer." },
   { value: "Atendimento", label: "Compra simples com apoio no WhatsApp." },
 ];
 
 export const differentials = [
   {
     icon: "sparkle",
-    title: "Seleção de verão",
+    title: "Looks para a rotina",
     description:
-      "Biquínis, saídas e achadinhos de praia escolhidos para montar produções leves, femininas e atuais.",
+      "Peças leves e bonitas para montar produções sem complicar o dia.",
   },
   {
     icon: "shield",
-    title: "Qualidade avaliada",
+    title: "Qualidade no detalhe",
     description:
-      "Cada peça passa por uma checagem de estado, elástico, forro, acabamento e apresentação.",
+      "Modelagens, tecidos e acabamentos pensados para vestir com conforto.",
   },
   {
     icon: "tag",
-    title: "Preço acessível",
+    title: "Estilo acessível",
     description:
-      "Moda praia com presença de boutique e valores mais leves para renovar o verão com inteligência.",
+      "Moda feminina com presença, bom gosto e valores pensados para comprar melhor.",
   },
   {
     icon: "heart",
@@ -53,57 +53,57 @@ export const differentials = [
 
 export const processSteps = [
   {
-    title: "Seleção dos biquínis",
+    title: "Conheça as novidades",
     description:
-      "Entram na seleção modelos com bom caimento, cores desejáveis e potencial real de uso.",
+      "Veja as peças em destaque e imagine combinações para a sua rotina.",
   },
   {
-    title: "Avaliação peça a peça",
+    title: "Escolha seu look",
     description:
-      "Forro, elástico, tecido e acabamento são conferidos para garantir uma compra tranquila.",
+      "Compare cores, modelagens e tamanhos com apoio direto no atendimento.",
   },
   {
-    title: "Vitrine com desejo",
+    title: "Confirme pelo WhatsApp",
     description:
-      "As peças são apresentadas com foco em estilo, composição de verão e informação objetiva.",
+      "Tire dúvidas, confira disponibilidade e combine os detalhes da compra.",
   },
   {
-    title: "Compra pelo WhatsApp",
+    title: "Finalize com praticidade",
     description:
-      "A cliente escolhe, conversa, confirma disponibilidade e finaliza de forma simples.",
+      "Resolva tudo de forma simples e siga para o próximo look com confiança.",
   },
 ];
 
 export const featuredPieces = [
   {
-    name: "Biquínis selecionados",
-    subtitle: "Seleção principal",
+    name: "Looks leves",
+    subtitle: "Para o dia a dia",
     description:
-      "Modelos pouco usados, bem cuidados e escolhidos para valorizar o corpo com naturalidade.",
+      "Peças fáceis de usar, com caimento bonito e presença na medida certa.",
     image:
       "https://images.unsplash.com/photo-1605749429052-4eb49f89eddc?auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Tops e partes de baixo",
+    name: "Peças para combinar",
     subtitle: "Combinações possíveis",
     description:
-      "Opções para montar conjuntos, misturar cores e encontrar a proporção que combina com você.",
+      "Opções para misturar cores, proporções e criar um visual que combina com você.",
     image:
       "https://images.unsplash.com/photo-1642071811908-48197d4bf711?auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Achados de praia",
-    subtitle: "Verão completo",
+    name: "Moda praia",
+    subtitle: "Verão com leveza",
     description:
-      "Peças para compor mala, piscina e fim de semana com um visual leve e bem escolhido.",
+      "Biquínis, saídas e complementos para piscina, viagem e fim de semana.",
     image:
       "https://images.unsplash.com/photo-1770657249870-626b05295f9c?auto=format&fit=crop&w=1000&q=80",
   },
   {
-    name: "Modelagens especiais",
+    name: "Modelagens que valorizam",
     subtitle: "Caimento em primeiro lugar",
     description:
-      "Seleção pensada para diferentes estilos, com atenção ao conforto e à segurança no uso.",
+      "Peças pensadas para trazer conforto, segurança e liberdade nos seus momentos.",
     image:
       "https://images.unsplash.com/photo-1621403334718-a8393252a80f?auto=format&fit=crop&w=1000&q=80",
   },
@@ -112,17 +112,16 @@ export const featuredPieces = [
 export const testimonials = [
   {
     quote:
-      "Comprei biquínis lindos e muito bem cuidados. Parecia compra de boutique.",
+      "Encontrei peças lindas e fáceis de combinar. Já quero usar em tudo.",
     author: "Marina, cliente",
   },
   {
-    quote:
-      "Gostei da seleção porque tinha modelos diferentes e preço justo.",
+    quote: "Gostei porque os modelos têm estilo e preço justo.",
     author: "Carolina, cliente",
   },
   {
     quote:
-      "O atendimento me ajudou a entender caimento e escolher com segurança.",
+      "Um atendimento leve, rápido e cuidadoso. Me ajudou a escolher sem dúvida.",
     author: "Renata, cliente",
   },
 ];
