@@ -74,7 +74,10 @@ export function ProductCarousel({ items, ctaHref }: ProductCarouselProps) {
               />
             </div>
             <div className="product-slide__body">
-              <span>{piece.subtitle}</span>
+              <div className="product-slide__meta">
+                <span>{piece.subtitle}</span>
+                <small>{String(index + 1).padStart(2, "0")}</small>
+              </div>
               <h3>{piece.name}</h3>
               <p>{piece.description}</p>
               <a href={ctaHref} target="_blank" rel="noreferrer">
@@ -86,6 +89,10 @@ export function ProductCarousel({ items, ctaHref }: ProductCarouselProps) {
       </div>
 
       <div className="product-carousel__progress" aria-label="Slides da vitrine">
+        <span>
+          {String(activeIndex + 1).padStart(2, "0")} /{" "}
+          {String(items.length).padStart(2, "0")}
+        </span>
         {items.map((item, index) => (
           <button
             type="button"

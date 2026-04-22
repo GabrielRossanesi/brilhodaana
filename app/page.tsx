@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { LogoMark } from "@/components/LogoMark";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ProductCarousel } from "@/components/ProductCarousel";
@@ -8,6 +8,7 @@ import {
   brand,
   differentials,
   featuredPieces,
+  heroSlides,
   links,
   testimonials,
 } from "@/data/siteContent";
@@ -51,24 +52,16 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Falar no WhatsApp
+                Quero ver no WhatsApp
               </a>
               <a className="button button--ghost button--light" href={links.catalog}>
-                Ver peças
+                Explorar looks
               </a>
             </div>
           </Reveal>
 
           <Reveal className="hero__visual" delay={140}>
-            <div className="hero__image-frame">
-              <Image
-                src="https://images.unsplash.com/photo-1770657249870-626b05295f9c?auto=format&fit=crop&w=1200&q=80"
-                alt="Look feminino leve em composição de verão"
-                width={860}
-                height={1100}
-                priority
-              />
-            </div>
+            <HeroSlideshow slides={heroSlides} />
           </Reveal>
         </div>
       </section>
@@ -78,8 +71,8 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Por que funciona"
-              title="Prático e pronto."
-              description="Peças bonitas para escolher com calma e vestir sem complicar."
+              title="Bonito sem complicar."
+              description="A ideia é simples: peças atuais, fáceis de vestir e prontas para acompanhar sua rotina."
             />
           </Reveal>
 
@@ -100,8 +93,8 @@ export default function Home() {
           <Reveal className="pieces-layout__intro">
             <SectionHeading
               eyebrow="Vitrine"
-              title="Peças que resolvem o look."
-              description="Deslize pelos looks, escolha seu favorito e fale direto pelo WhatsApp."
+              title="Looks com presença."
+              description="Arraste, sinta o clima de cada peça e escolha a que combina com seu momento."
             />
             <a
               className="button"
@@ -148,10 +141,10 @@ export default function Home() {
         <div className="section__inner">
           <Reveal className="cta-panel">
             <span className="eyebrow">WhatsApp</span>
-            <h2>Ver novidades?</h2>
+            <h2>Pronta para escolher o seu?</h2>
             <p>
-              Fale com a Brilho da Ana e escolha seu próximo look com ajuda
-              direta.
+              Chame a Brilho da Ana e receba ajuda direta para encontrar o
+              look que combina com você agora.
             </p>
             <div className="hero__actions">
               <a
@@ -160,10 +153,10 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Falar no WhatsApp
+                Chamar no WhatsApp
               </a>
               <a className="button button--ghost" href={links.catalog}>
-                Ver peças
+                Rever vitrine
               </a>
             </div>
           </Reveal>
