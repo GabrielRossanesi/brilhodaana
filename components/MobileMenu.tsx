@@ -5,8 +5,8 @@ import { links } from "@/data/siteContent";
 
 const navItems = [
   { href: "#diferenciais", label: "Diferenciais" },
-  { href: "#marca", label: "A marca" },
   { href: "#pecas", label: "Peças" },
+  { href: "#confianca", label: "Confiança" },
   { href: "#contato", label: "Contato" },
 ];
 

@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { IconBadge } from "@/components/IconBadge";
 import { LogoMark } from "@/components/LogoMark";
 import { MobileMenu } from "@/components/MobileMenu";
+import { ProductCarousel } from "@/components/ProductCarousel";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
   brand,
   differentials,
   featuredPieces,
-  heroStats,
   links,
-  processSteps,
   testimonials,
 } from "@/data/siteContent";
 
@@ -25,8 +23,8 @@ export default function Home() {
           </a>
           <nav className="site-nav" aria-label="Navegação principal">
             <a href="#diferenciais">Diferenciais</a>
-            <a href="#marca">A marca</a>
             <a href="#pecas">Peças</a>
+            <a href="#confianca">Confiança</a>
             <a href="#contato">Contato</a>
           </nav>
           <a
@@ -47,21 +45,17 @@ export default function Home() {
             <p>{brand.subheadline}</p>
 
             <div className="hero__actions">
-              <a className="button" href={links.catalog}>
-                Ver novidades
+              <a
+                className="button"
+                href={links.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Falar no WhatsApp
               </a>
-              <a className="button button--ghost button--light" href={links.about}>
-                Conhecer a marca
+              <a className="button button--ghost button--light" href={links.catalog}>
+                Ver peças
               </a>
-            </div>
-
-            <div className="hero__stats" aria-label="Diferenciais da experiência">
-              {heroStats.map((item) => (
-                <div key={item.value} className="hero__stat">
-                  <strong>{item.value}</strong>
-                  <span>{item.label}</span>
-                </div>
-              ))}
             </div>
           </Reveal>
 
@@ -75,13 +69,6 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="hero__note">
-              <span>Estilo para a rotina</span>
-              <p>
-                Peças versáteis para montar looks leves, bonitos e prontos para
-                acompanhar seus planos.
-              </p>
-            </div>
           </Reveal>
         </div>
       </section>
@@ -90,69 +77,18 @@ export default function Home() {
         <div className="section__inner">
           <Reveal>
             <SectionHeading
-              eyebrow="Moda feminina"
-              title="Looks versáteis para facilitar o seu dia a dia."
-              description="Combine peças leves, bonitas e fáceis de usar sem complicar a rotina."
+              eyebrow="Por que funciona"
+              title="Prático e pronto."
+              description="Peças bonitas para escolher com calma e vestir sem complicar."
             />
           </Reveal>
 
           <div className="feature-grid">
             {differentials.map((item, index) => (
               <Reveal key={item.title} className="feature-card" delay={index * 90}>
-                <IconBadge
-                  type={item.icon as "sparkle" | "shield" | "tag" | "heart"}
-                />
+                <span className="feature-card__index">0{index + 1}</span>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" id="marca">
-        <div className="section__inner story-grid">
-          <Reveal className="story-grid__intro">
-            <SectionHeading
-              eyebrow="Sobre a marca"
-              title="Uma loja feminina para vestir sua rotina com leveza e personalidade."
-              description={`${brand.statement} ${brand.mission}`}
-            />
-          </Reveal>
-
-          <Reveal className="story-grid__aside" delay={120}>
-            <div className="story-panel">
-              <span className="story-panel__label">Essência da Brilho da Ana</span>
-              <p>
-                Moda feminina leve, prática e cheia de personalidade para
-                escolher sem pressa.
-              </p>
-              <a href={links.whatsapp} target="_blank" rel="noreferrer">
-                Conversar sobre peças
-              </a>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="section section--soft" id="como-funciona">
-        <div className="section__inner process-grid">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Como comprar"
-              title="Escolha seu look e fale com a gente pelo WhatsApp."
-              description="A experiência é direta para você ver as novidades, tirar dúvidas e finalizar com tranquilidade."
-            />
-          </Reveal>
-
-          <div className="process-list">
-            {processSteps.map((step, index) => (
-              <Reveal key={step.title} className="process-item" delay={index * 100}>
-                <span className="process-item__index">0{index + 1}</span>
-                <div>
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
-                </div>
               </Reveal>
             ))}
           </div>
@@ -164,8 +100,8 @@ export default function Home() {
           <Reveal className="pieces-layout__intro">
             <SectionHeading
               eyebrow="Vitrine"
-              title="Peças versáteis para montar looks sem esforço."
-              description="Destaques para o dia a dia, lazer e momentos de verão, com estilo leve e fácil de combinar."
+              title="Peças que resolvem o look."
+              description="Deslize pelos looks, escolha seu favorito e fale direto pelo WhatsApp."
             />
             <a
               className="button"
@@ -173,27 +109,13 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Ver novidades no WhatsApp
+              Ver novidades
             </a>
           </Reveal>
 
-          <div className="pieces-grid">
-            {featuredPieces.map((piece, index) => (
-              <Reveal key={piece.name} className="piece-card" delay={index * 90}>
-                <div className="piece-card__image">
-                  <Image src={piece.image} alt={piece.name} width={800} height={1000} />
-                </div>
-                <div className="piece-card__body">
-                  <span>{piece.subtitle}</span>
-                  <h3>{piece.name}</h3>
-                  <p>{piece.description}</p>
-                  <a href={links.whatsapp} target="_blank" rel="noreferrer">
-                    Tenho interesse
-                  </a>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal className="pieces-layout__carousel" delay={120}>
+            <ProductCarousel items={featuredPieces} ctaHref={links.whatsapp} />
+          </Reveal>
         </div>
       </section>
 
@@ -202,8 +124,8 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Confiança"
-              title="Comprar moda feminina pode ser simples, leve e seguro."
-              description="Atendimento próximo para orientar tamanho, caimento, combinações e disponibilidade."
+              title="Compra segura."
+              description={`${brand.statement} ${brand.mission}`}
             />
           </Reveal>
 
@@ -225,11 +147,11 @@ export default function Home() {
       <section className="section section--cta" id="contato">
         <div className="section__inner">
           <Reveal className="cta-panel">
-            <span className="eyebrow">Chamada final</span>
-            <h2>Pronta para deixar seus looks mais fáceis?</h2>
+            <span className="eyebrow">WhatsApp</span>
+            <h2>Ver novidades?</h2>
             <p>
-              Conheça as novidades da Brilho da Ana e escolha peças que combinam
-              com sua rotina.
+              Fale com a Brilho da Ana e escolha seu próximo look com ajuda
+              direta.
             </p>
             <div className="hero__actions">
               <a
@@ -241,7 +163,7 @@ export default function Home() {
                 Falar no WhatsApp
               </a>
               <a className="button button--ghost" href={links.catalog}>
-                Ver novidades
+                Ver peças
               </a>
             </div>
           </Reveal>
@@ -251,7 +173,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="site-footer__inner">
           <LogoMark muted />
-          <p>Moda feminina leve, prática e cheia de personalidade.</p>
+          <p>Moda feminina leve e prática.</p>
           <div className="site-footer__links">
             <a href={links.instagram} target="_blank" rel="noreferrer">
               Instagram
@@ -263,6 +185,15 @@ export default function Home() {
           <span>Copyright 2026 Brilho da Ana. Todos os direitos reservados.</span>
         </div>
       </footer>
+
+      <a
+        className="sticky-whatsapp"
+        href={links.whatsapp}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Falar no WhatsApp
+      </a>
     </main>
   );
 }

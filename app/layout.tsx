@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Brilho da Ana | Moda feminina leve e prática",
   description:
-    "Loja de moda feminina com peças versáteis, bonitas e fáceis de combinar para o dia a dia.",
+    "Loja de moda feminina com looks leves, bonitos e fáceis para dias reais.",
 };
 
 export default function RootLayout({

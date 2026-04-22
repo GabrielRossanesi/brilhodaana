@@ -1,127 +1,138 @@
+import type { StaticImageData } from "next/image";
+import lookBeige from "@/images/WhatsApp Image 2026-04-22 at 12.47.19.jpeg";
+import lookBlue from "@/images/WhatsApp Image 2026-04-22 at 12.47.20 (1).jpeg";
+import lookTerracotta from "@/images/WhatsApp Image 2026-04-22 at 12.47.20 (2).jpeg";
+import lookStriped from "@/images/WhatsApp Image 2026-04-22 at 12.47.20 (3).jpeg";
+import lookNeutral from "@/images/WhatsApp Image 2026-04-22 at 12.47.20 (4).jpeg";
+import lookPinkSkirt from "@/images/WhatsApp Image 2026-04-22 at 12.47.20.jpeg";
+import lookGreen from "@/images/WhatsApp Image 2026-04-22 at 12.47.21 (1).jpeg";
+import lookShorts from "@/images/WhatsApp Image 2026-04-22 at 12.47.21 (2).jpeg";
+import lookPinkDress from "@/images/WhatsApp Image 2026-04-22 at 12.47.21 (3).jpeg";
+import lookRose from "@/images/WhatsApp Image 2026-04-22 at 12.47.21.jpeg";
+
+export type FeaturedPiece = {
+  name: string;
+  subtitle: string;
+  description: string;
+  image: StaticImageData;
+};
+
 export const brand = {
   name: "Brilho da Ana",
-  eyebrow: "Moda feminina para todos os dias",
-  headline: "Se vestir bem nunca foi tão simples.",
+  eyebrow: "Brilho da Ana",
+  headline: "Looks fáceis para dias reais.",
   subheadline:
-    "Peças versáteis, bonitas e fáceis de combinar para acompanhar sua rotina com leveza.",
+    "Moda feminina leve, bonita e pronta para acompanhar sua rotina.",
   statement:
-    "A Brilho da Ana é uma loja de moda feminina feita para quem quer praticidade sem abrir mão de estilo. Aqui, cada look nasce para facilitar o dia a dia e valorizar a sua personalidade.",
+    "A Brilho da Ana é uma loja de moda feminina para quem quer se vestir bem sem complicar a rotina.",
   mission:
-    "Do básico bem resolvido ao visual de fim de semana, a marca reúne opções leves, atuais e confortáveis para você escolher com confiança.",
+    "Peças atuais, atendimento direto e escolhas bonitas para você comprar com confiança.",
 };
 
 export const links = {
   whatsapp:
     "https://wa.me/5519982628023?text=Ol%C3%A1,%20quero%20conhecer%20as%20pe%C3%A7as%20da%20Brilho%20da%20Ana",
   catalog: "#pecas",
-  about: "#marca",
   instagram: "https://instagram.com/brilhodaana",
 };
-
-export const heroStats = [
-  { value: "Looks", label: "Combinações fáceis para resolver a produção." },
-  { value: "Versatilidade", label: "Peças que transitam do dia a dia ao lazer." },
-  { value: "Atendimento", label: "Compra simples com apoio no WhatsApp." },
-];
 
 export const differentials = [
   {
     icon: "sparkle",
-    title: "Looks para a rotina",
+    title: "Escolha sem complicar",
     description:
-      "Peças leves e bonitas para montar produções sem complicar o dia.",
+      "Peças fáceis de combinar para resolver o look em poucos minutos.",
   },
   {
     icon: "shield",
-    title: "Qualidade no detalhe",
+    title: "Caimento bonito",
     description:
-      "Modelagens, tecidos e acabamentos pensados para vestir com conforto.",
-  },
-  {
-    icon: "tag",
-    title: "Estilo acessível",
-    description:
-      "Moda feminina com presença, bom gosto e valores pensados para comprar melhor.",
+      "Modelagens confortáveis para você se sentir bem no dia a dia.",
   },
   {
     icon: "heart",
-    title: "Atendimento próximo",
+    title: "Atendimento direto",
     description:
-      "Contato direto para tirar dúvidas sobre tamanho, caimento, combinações e disponibilidade.",
+      "Tire dúvidas sobre tamanho, disponibilidade e compra pelo WhatsApp.",
   },
 ];
 
-export const processSteps = [
+export const featuredPieces: FeaturedPiece[] = [
   {
-    title: "Conheça as novidades",
-    description:
-      "Veja as peças em destaque e imagine combinações para a sua rotina.",
-  },
-  {
-    title: "Escolha seu look",
-    description:
-      "Compare cores, modelagens e tamanhos com apoio direto no atendimento.",
-  },
-  {
-    title: "Confirme pelo WhatsApp",
-    description:
-      "Tire dúvidas, confira disponibilidade e combine os detalhes da compra.",
-  },
-  {
-    title: "Finalize com praticidade",
-    description:
-      "Resolva tudo de forma simples e siga para o próximo look com confiança.",
-  },
-];
-
-export const featuredPieces = [
-  {
-    name: "Looks leves",
+    name: "Top leve",
     subtitle: "Para o dia a dia",
-    description:
-      "Peças fáceis de usar, com caimento bonito e presença na medida certa.",
-    image:
-      "https://images.unsplash.com/photo-1605749429052-4eb49f89eddc?auto=format&fit=crop&w=1000&q=80",
+    description: "Visual fácil para dias quentes.",
+    image: lookBeige,
   },
   {
-    name: "Peças para combinar",
-    subtitle: "Combinações possíveis",
-    description:
-      "Opções para misturar cores, proporções e criar um visual que combina com você.",
-    image:
-      "https://images.unsplash.com/photo-1642071811908-48197d4bf711?auto=format&fit=crop&w=1000&q=80",
+    name: "Vestido azul",
+    subtitle: "Estampa fresh",
+    description: "Leve, colorido e pronto para sair.",
+    image: lookBlue,
   },
   {
-    name: "Moda praia",
-    subtitle: "Verão com leveza",
-    description:
-      "Biquínis, saídas e complementos para piscina, viagem e fim de semana.",
-    image:
-      "https://images.unsplash.com/photo-1770657249870-626b05295f9c?auto=format&fit=crop&w=1000&q=80",
+    name: "Vestido terracota",
+    subtitle: "Conforto feminino",
+    description: "Movimento bonito com toque natural.",
+    image: lookTerracotta,
   },
   {
-    name: "Modelagens que valorizam",
-    subtitle: "Caimento em primeiro lugar",
-    description:
-      "Peças pensadas para trazer conforto, segurança e liberdade nos seus momentos.",
-    image:
-      "https://images.unsplash.com/photo-1621403334718-a8393252a80f?auto=format&fit=crop&w=1000&q=80",
+    name: "Vestido listrado",
+    subtitle: "Leveza urbana",
+    description: "Uma peça única para resolver o look.",
+    image: lookStriped,
+  },
+  {
+    name: "Conjunto neutro",
+    subtitle: "Praticidade",
+    description: "Moderno, confortável e fácil de usar.",
+    image: lookNeutral,
+  },
+  {
+    name: "Saia estampada",
+    subtitle: "Cor no look",
+    description: "Uma produção leve com personalidade.",
+    image: lookPinkSkirt,
+  },
+  {
+    name: "Look verde",
+    subtitle: "Verão marcante",
+    description: "Fresco, solar e cheio de presença.",
+    image: lookGreen,
+  },
+  {
+    name: "Short claro",
+    subtitle: "Base versátil",
+    description: "Combina com tudo e deixa o visual leve.",
+    image: lookShorts,
+  },
+  {
+    name: "Vestido rosa",
+    subtitle: "Delicado",
+    description: "Feminino sem esforço para dias especiais.",
+    image: lookPinkDress,
+  },
+  {
+    name: "Conjunto rose",
+    subtitle: "Conforto",
+    description: "Uma escolha prática para entrar no clima.",
+    image: lookRose,
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Encontrei peças lindas e fáceis de combinar. Já quero usar em tudo.",
+      "Encontrei peças lindas e fáceis de combinar.",
     author: "Marina, cliente",
   },
   {
-    quote: "Gostei porque os modelos têm estilo e preço justo.",
+    quote: "Os modelos têm estilo, caimento bom e preço justo.",
     author: "Carolina, cliente",
   },
   {
     quote:
-      "Um atendimento leve, rápido e cuidadoso. Me ajudou a escolher sem dúvida.",
+      "O atendimento me ajudou a escolher sem dúvida.",
     author: "Renata, cliente",
   },
 ];

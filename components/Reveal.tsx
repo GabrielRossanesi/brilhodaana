@@ -11,12 +11,29 @@ type RevealProps = {
 
 export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
   const ref = useRef<HTMLDivElement | null>(null);
+  const [isReady, setIsReady] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
 
     if (!node) {
+      return;
+    }
+
+    setIsReady(true);
+
+    const rect = node.getBoundingClientRect();
+    const viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top < viewportHeight * 0.92 && rect.bottom > 0) {
+      setIsVisible(true);
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      setIsVisible(true);
       return;
     }
 
@@ -30,8 +47,8 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
         });
       },
       {
-        threshold: 0.18,
-        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.08,
+        rootMargin: "120px 0px -6% 0px",
       },
     );
 
@@ -43,7 +60,9 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
   return (
     <div
       ref={ref}
-      className={`reveal${isVisible ? " is-visible" : ""} ${className}`.trim()}
+      className={`reveal${isReady ? " is-ready" : ""}${
+        isVisible ? " is-visible" : ""
+      } ${className}`.trim()}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
