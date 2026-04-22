@@ -1406,7 +1406,7 @@ img.hero-slideshow__image.is-active {
 
   .hero {
     min-height: auto;
-    padding: 16px 0 62px;
+    padding: 14px 0 64px;
     background: #f8f4ef;
   }
 
@@ -1422,8 +1422,8 @@ img.hero-slideshow__image.is-active {
 
   .hero__content {
     width: 100%;
-    gap: 28px;
-    padding-top: 22px;
+    gap: 24px;
+    padding-top: 18px;
   }
 
   .hero__visual {
@@ -1435,8 +1435,8 @@ img.hero-slideshow__image.is-active {
   .hero__image-frame {
     width: 100vw;
     max-width: none;
-    height: min(27svh, 360px);
-    min-height: 220px;
+    height: clamp(326px, 42svh, 450px);
+    min-height: 326px;
     margin-left: calc(50% - 50vw);
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     box-shadow: none;
@@ -1454,7 +1454,14 @@ img.hero-slideshow__image.is-active {
   .hero__image-frame img {
     height: 100%;
     object-fit: cover;
-    object-position: 50% 26%;
+  }
+
+  img.hero-slideshow__image {
+    transform: scale(1.005);
+  }
+
+  img.hero-slideshow__image.is-active {
+    transform: scale(1.04);
   }
 
   .hero__copy {
@@ -1464,16 +1471,16 @@ img.hero-slideshow__image.is-active {
   }
 
   .hero__copy h1 {
-    max-width: 8.7ch;
-    margin: 16px 0 18px;
-    font-size: clamp(3.15rem, 12.8vw, 4.15rem);
-    line-height: 0.88;
+    max-width: 11.4ch;
+    margin: 12px 0 16px;
+    font-size: clamp(3rem, 12vw, 4rem);
+    line-height: 0.9;
     letter-spacing: 0;
   }
 
   .hero__copy p {
-    max-width: 29ch;
-    font-size: 1.02rem;
+    max-width: 28ch;
+    font-size: 1rem;
     line-height: 1.62;
   }
 
@@ -1497,7 +1504,7 @@ img.hero-slideshow__image.is-active {
   }
 
   .section {
-    padding: 96px 0;
+    padding: 90px 0;
   }
 
   .section-heading h2,
@@ -1567,8 +1574,8 @@ img.hero-slideshow__image.is-active {
   }
 
   .section--pieces {
-    padding-top: 104px;
-    padding-bottom: 108px;
+    padding-top: 98px;
+    padding-bottom: 102px;
     background:
       linear-gradient(180deg, rgba(64, 111, 105, 0.08), rgba(255, 255, 255, 0) 28%),
       linear-gradient(180deg, #eef5f2, #f8f4ef);
@@ -1593,15 +1600,15 @@ img.hero-slideshow__image.is-active {
   }
 
   .product-carousel__track {
-    gap: 16px;
+    gap: 18px;
     margin-inline: 0;
-    padding: 2px 22px 22px;
-    scroll-padding-inline: 22px;
+    padding: 2px 20px 24px;
+    scroll-padding-inline: 20px;
   }
 
   .product-slide {
-    flex: 0 0 84vw;
-    max-width: 84vw;
+    flex: 0 0 86vw;
+    max-width: 86vw;
     border: 0;
     border-radius: 0;
     background: transparent;
@@ -1620,12 +1627,12 @@ img.hero-slideshow__image.is-active {
   .product-slide__image {
     aspect-ratio: 4 / 5;
     border-radius: var(--radius-lg);
-    box-shadow: 0 28px 58px rgba(22, 19, 17, 0.18);
+    box-shadow: 0 24px 52px rgba(22, 19, 17, 0.16);
   }
 
   .product-slide__body {
-    gap: 8px;
-    padding: 18px 2px 0;
+    gap: 9px;
+    padding: 18px 4px 0;
   }
 
   .product-slide__body h3 {
@@ -1642,7 +1649,7 @@ img.hero-slideshow__image.is-active {
 
   .product-slide__body a {
     width: 100%;
-    min-height: 52px;
+    min-height: 54px;
     margin-top: 12px;
     box-shadow: 0 16px 32px rgba(22, 19, 17, 0.16);
   }
@@ -1682,16 +1689,16 @@ img.hero-slideshow__image.is-active {
   }
 
   .testimonial-item {
-    padding: 30px 0;
+    padding: 32px 0;
     border-top: 0;
     border-bottom: 1px solid rgba(22, 19, 17, 0.1);
   }
 
   .testimonial-item p {
-    max-width: 22ch;
+    max-width: 23ch;
     margin-bottom: 18px;
-    font-size: clamp(1.7rem, 7vw, 2.3rem);
-    line-height: 1.14;
+    font-size: clamp(1.62rem, 6.5vw, 2.2rem);
+    line-height: 1.16;
   }
 
   .testimonial-item span {
@@ -1715,7 +1722,7 @@ img.hero-slideshow__image.is-active {
     display: grid;
     min-height: auto;
     align-content: start;
-    padding: 74px 24px 118px;
+    padding: 72px 24px 118px;
     border: 0;
     border-radius: 0;
     background:
@@ -1726,8 +1733,8 @@ img.hero-slideshow__image.is-active {
 
   .cta-panel h2 {
     max-width: 8.6ch;
-    font-size: clamp(3.2rem, 13vw, 4.5rem);
-    line-height: 0.9;
+    font-size: clamp(3.05rem, 12.4vw, 4.3rem);
+    line-height: 0.92;
   }
 
   .cta-panel p {
@@ -1747,7 +1754,7 @@ img.hero-slideshow__image.is-active {
   .sticky-whatsapp {
     left: 18px;
     right: 18px;
-    min-height: 60px;
+    min-height: 62px;
     background: #2c6a62;
     border: 1px solid rgba(255, 255, 255, 0.24);
     box-shadow: 0 18px 46px rgba(26, 75, 68, 0.38);

@@ -20,27 +20,27 @@ export const heroSlides: HeroSlide[] = [
   {
     image: lookGreen,
     alt: "Look verde da Brilho da Ana",
-    position: "50% 16%",
+    position: "50% 12%",
   },
   {
     image: lookBlue,
     alt: "Vestido azul estampado da Brilho da Ana",
-    position: "50% 0%",
+    position: "50% 4%",
   },
   {
     image: lookBeige,
     alt: "Top claro com short da Brilho da Ana",
-    position: "50% 2%",
+    position: "50% 8%",
   },
   {
     image: lookStriped,
     alt: "Vestido listrado rose da Brilho da Ana",
-    position: "50% 0%",
+    position: "50% 8%",
   },
   {
     image: lookPinkDress,
     alt: "Vestido rosa leve da Brilho da Ana",
-    position: "50% 4%",
+    position: "50% 7%",
   },
 ];
 
