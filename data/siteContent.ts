@@ -14,6 +14,7 @@ export type HeroSlide = {
   image: StaticImageData;
   alt: string;
   position: string;
+  mobilePosition: string;
 };
 
 export const heroSlides: HeroSlide[] = [
@@ -21,26 +22,31 @@ export const heroSlides: HeroSlide[] = [
     image: lookGreen,
     alt: "Look verde da Brilho da Ana",
     position: "50% 12%",
+    mobilePosition: "50% 34%",
   },
   {
     image: lookBlue,
     alt: "Vestido azul estampado da Brilho da Ana",
     position: "50% 4%",
+    mobilePosition: "50% 0%",
   },
   {
     image: lookBeige,
     alt: "Top claro com short da Brilho da Ana",
     position: "50% 8%",
+    mobilePosition: "50% 6%",
   },
   {
     image: lookStriped,
     alt: "Vestido listrado rose da Brilho da Ana",
     position: "50% 8%",
+    mobilePosition: "50% 4%",
   },
   {
     image: lookPinkDress,
     alt: "Vestido rosa leve da Brilho da Ana",
     position: "50% 7%",
+    mobilePosition: "50% 0%",
   },
 ];
 

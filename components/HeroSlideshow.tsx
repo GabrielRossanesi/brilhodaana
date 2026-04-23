@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import type { HeroSlide } from "@/data/siteContent";
 
 type HeroSlideshowProps = {
@@ -37,10 +37,16 @@ export function HeroSlideshow({ slides }: HeroSlideshowProps) {
           sizes="(max-width: 719px) 100vw, 560px"
           placeholder="blur"
           priority={index === 0}
+          loading={index === 0 ? undefined : "eager"}
           className={`hero-slideshow__image${
             index === activeIndex ? " is-active" : ""
           }`}
-          style={{ objectPosition: slide.position }}
+          style={
+            {
+              "--hero-position-desktop": slide.position,
+              "--hero-position-mobile": slide.mobilePosition,
+            } as CSSProperties
+          }
         />
       ))}
       <span className="hero__image-label">Looks da semana</span>
